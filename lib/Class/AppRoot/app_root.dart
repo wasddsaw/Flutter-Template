@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // GlobalVariable().removeTerminalSecret();
     // GlobalVariable().removePassCode();
 
-    AutoRouter.of(context).push(ModuleRouter.Home());
+    AutoRouter.of(context).replace(ModuleRouter.Home());
   }
 
   void checkAppInfo() async {
@@ -64,14 +64,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[200],
+      backgroundColor: Colors.white,
       body: Center(
         child: Container(
-          width: 130,
-          height: 130,
-          color: Colors.green[200],
+          color: Colors.white,
           child: Image.asset(
-            'assets/images/masjid-logo.png',
+            'assets/images/default.png',
           ),
         ),
       ),

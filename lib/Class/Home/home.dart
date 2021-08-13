@@ -32,6 +32,9 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     apiManager = Provider.of<ApiManager>(context, listen: false);
+
+    // calling api function
+    // onGetAllPosts();
   }
 
   void onReadResponse(bool status, res) {
